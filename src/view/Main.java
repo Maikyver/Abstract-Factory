@@ -1,13 +1,15 @@
 package view;
-
 import model.Gladiador;
 import model.HandlerLuchador;
 import model.Utils;
 
 public class Main {
 
-	HandlerLuchador hl = new HandlerLuchador();
+	public static void main(String[] args) {
+		HandlerLuchador hl = new HandlerLuchador();
 
-	Gladiador g = (Gladiador) hl.crearLuchador(Utils.GLADIADOR);
+		Gladiador g = (Gladiador) hl.crearLuchador(Utils.GLADIADOR);
+
+	}
 
 }

@@ -4,13 +4,13 @@ public class FabricaEquipamentoArquero implements FabricaEquipamentoLuchador {
 
 	@Override
 	public Arma CrearArma() {
-		// TODO Auto-generated method stub
+		System.out.println(" Creo un Arco");
 		return new Arco();
 	}
 
 	@Override
 	public Armadura CrearArmadura() {
-		// TODO Auto-generated method stub
+		System.out.println(" Creo una Armadura Ligera");
 		return new Ligera();
 	}
 
