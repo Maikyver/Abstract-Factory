@@ -1,7 +1,7 @@
 package model;
 
 public class HandlerLuchador {
-public Luchador crearLuchador(Utils tipo){
+public Luchador crearLuchador(UtilsL tipo){
 	Luchador l = null;
 	FabricaEquipamentoLuchador fl=null;
 	switch(tipo)

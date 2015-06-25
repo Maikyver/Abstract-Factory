@@ -4,14 +4,15 @@ public class Arquero extends Luchador {
 
 	
 	public Arquero(FabricaEquipamentoLuchador fl) {
-		this.arma=fl.CrearArma();
-		this.armadura=fl.CrearArmadura();
+		this.fabrica=fl;
+		setear();
 		System.out.println("Creo un Arquero");
 	}
 
-	/*public void setear(FabricaEquipamentoLuchador fl) {
-	this.arma=fl.CrearArma();
-	this.armadura=fl.CrearArmadura();// TODO Auto-generated constructor stub
-	}*/
+	protected void setear() {
+	this.arma=fabrica.CrearArma();
+	this.armadura=fabrica.CrearArmadura();// TODO Auto-generated constructor stub
+	}
+
 
 }

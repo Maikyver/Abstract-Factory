@@ -1,16 +1,17 @@
 package model;
 
 public class Gladiador extends Luchador {
+	
 
 	public Gladiador(FabricaEquipamentoLuchador fl) {
-		this.arma=fl.CrearArma();
-		this.armadura=fl.CrearArmadura();
-		System.out.println(" Creo un Gladiador");
+		this.fabrica=fl;
+		setear();
+		System.out.println("Creo un Gladiador");
 	}
 
-	/*public void setear() {
-	this.arma=fl.CrearArma();
-	this.armadura=fl.CrearArmadura();// TODO Auto-generated constructor stub
-	}*/
-
+	protected void setear() {
+	this.arma=fabrica.CrearArma();
+	this.armadura=fabrica.CrearArmadura();// TODO Auto-generated constructor stub
+	
+	}
 }
