@@ -1,11 +1,18 @@
 package model;
 
+
+import java.util.HashMap;
+
 public class FabricaEquipamentoGladiador implements FabricaEquipamentoLuchador{
 
 	@Override
-	public Arma CrearArma() {
-		System.out.println("Creo una Espada");
-		return new Espada();
+	public HashMap CrearArma() {
+		HashMap Mapa;
+		Mapa = new HashMap();
+		Mapa.put("ArmaCerca", new Espada());
+		Mapa.put("ArmaDistante", new Lanza());
+		System.out.println("Creo una Espada y una Lanza");
+		return Mapa;
 	}
 
 	@Override

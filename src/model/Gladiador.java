@@ -10,8 +10,10 @@ public class Gladiador extends Luchador {
 	}
 
 	protected void setear() {
-	this.arma=fabrica.CrearArma();
-	this.armadura=fabrica.CrearArmadura();// TODO Auto-generated constructor stub
-	
+	this.armas=fabrica.CrearArma();
+	this.armadura=fabrica.CrearArmadura();
+	this.vida=15;// TODO Auto-generated constructor stub//preguntar porq si esto no esta no me mata al arquero
+	System.out.println("Gladiador seteado");
 	}
+
 }

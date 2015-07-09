@@ -1,6 +1,8 @@
 package model;
 
+import java.util.HashMap;
+
 public interface FabricaEquipamentoLuchador {
- Arma CrearArma();
+ HashMap CrearArma();
  Armadura CrearArmadura();
 }
