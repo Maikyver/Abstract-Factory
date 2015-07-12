@@ -1,28 +1,30 @@
 package model;
 
+import java.util.HashMap;
 import java.util.Random;
 
 public abstract class Luchador {
-	
-	Arma arma;
+	public int vida;
 	EstrategiaAtaque estrategia;
+	HashMap armas;
 	Armadura armadura;
 	FabricaEquipamentoLuchador fabrica;
 	
 	abstract void setear();
-	
-	public void Atacar(){
+	//public abstract void setArma(Luchador l);
+	public EstrategiaAtaque Atacar(Luchador a){
 		CambiarEstrategia(Visualizar());
-		estrategia.Recarga();
-		estrategia.Atacar();
+		estrategia.recarga();
+		estrategia.atacar(a,this);
+		return estrategia;
 	}
 	
-	public UtilsA Visualizar(){
+	public UtilsE Visualizar(){
 		
-		return UtilsA.values()[new Random().nextInt(UtilsA.values().length)];
+		return UtilsE.values()[new Random().nextInt(UtilsE.values().length)];
 	}
 	
-	public void CambiarEstrategia( UtilsA obj){
+	public void CambiarEstrategia( UtilsE obj){
 		switch(obj){
 		case CERCANO:
 			estrategia = new EstrategiaCerca();
@@ -34,4 +36,14 @@ public abstract class Luchador {
 			break;
 		}
 	}
+
+	public int getVida() {
+		return vida;
+	}
+
+	public void setVida(int vida) {
+		this.vida = vida;
+	}
+
+	
 	}

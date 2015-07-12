@@ -2,7 +2,7 @@ package model;
 
 public class Arquero extends Luchador {
 
-	
+
 	public Arquero(FabricaEquipamentoLuchador fl) {
 		this.fabrica=fl;
 		setear();
@@ -10,8 +10,11 @@ public class Arquero extends Luchador {
 	}
 
 	protected void setear() {
-	this.arma=fabrica.CrearArma();
-	this.armadura=fabrica.CrearArmadura();// TODO Auto-generated constructor stub
+	this.armas=fabrica.CrearArma();
+	this.armadura=fabrica.CrearArmadura();
+	this.vida=10;
+	// TODO Auto-generated constructor stub
+	System.out.println("Arquero seteado");
 	}
 
 

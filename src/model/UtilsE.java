@@ -1,5 +1,5 @@
 package model;
 
-public enum UtilsA {
+public enum UtilsE {
 CERCANO,DISTANTE;
 }

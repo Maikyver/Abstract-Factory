@@ -1,5 +1,6 @@
 package model;
 
-public class Arma {
-
+public abstract class Arma {
+int daño;
+abstract int getDaño();
 }
