@@ -7,6 +7,6 @@ public int getDaño() {
 }
 public Espada() {
 	super();
-	this.daño =daño;
+	this.daño = daño;
 }
 }

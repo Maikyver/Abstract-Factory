@@ -18,6 +18,7 @@ public class Main {
 		}
 		System.out.println("El "+a.toString()+" ha muerto!");
 		
+		
 	}
 	public String toString(){
 		return"gladeador";

@@ -1,7 +1,5 @@
 package model;
-
 import java.util.HashMap;
-
 
 public class EstrategiaDistante implements EstrategiaAtaque {
 
@@ -18,6 +16,7 @@ public class EstrategiaDistante implements EstrategiaAtaque {
 	}
 public Arma setArma(Luchador atacante){
 	return ((Arma) atacante.armas.get("ArmaDistante"));
+
 	}
 	@Override
 	public void recarga() {

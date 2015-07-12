@@ -10,4 +10,5 @@ public class Lanza extends Arma {
 	public int getDaño() {
 		return daño;
 	}
+
 }

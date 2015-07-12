@@ -5,8 +5,9 @@ import java.util.Random;
 
 public abstract class Luchador {
 	public int vida;
-	EstrategiaAtaque estrategia;
+
 	HashMap armas;
+	EstrategiaAtaque estrategia;
 	Armadura armadura;
 	FabricaEquipamentoLuchador fabrica;
 	
