@@ -11,6 +11,10 @@ public class Main {
 
 		Gladiador g = (Gladiador) hl.crearLuchador(UtilsL.GLADIADOR);
 		Arquero a = (Arquero) hl.crearLuchador(UtilsL.ARQUERO);
+		if(g!=null)
+		System.out.println("Gladiador seteado");
+		if(a!=null)
+			System.out.println("Arquero seteado");
 		
 		while(a.getVida()!=0){
 			g.Atacar(a);
@@ -19,8 +23,5 @@ public class Main {
 		System.out.println("El "+a.toString()+" ha muerto!");
 		
 		
-	}
-	public String toString(){
-		return"gladeador";
 	}
 }
